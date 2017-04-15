@@ -56,54 +56,12 @@ class SmartInteger{
      */
         friend std::ostream& operator<<(std::ostream &os, const SmartInteger &si);
 
-    
-     /**
-     * @brief Overloaded operator for < for SmartInteger.
-     *
-     * @return String object specifying whether first parameter is less than the second.
-     */
-      
-        friend std::string operator<(const SmartInteger &lhs, const SmartInteger &rhs);
-
-
-    /**
-     * @brief Overloaded operator for > for SmartInteger.
-     *
-     * @return String object specifying whether first parameter is greater than the second.
-     */
-        friend std::string operator>(const SmartInteger &lhs, const SmartInteger &rhs);
-
-        /**
-     * @brief Overloaded operator for <= for SmartInteger.
-     *
-     * @return String object specifying whether first parameter is less than or equal to the second.
-     */
-        friend std::string operator<=(const SmartInteger &lhs, const SmartInteger &rhs);
-
-     /**
-     * @brief Overloaded operator for >= for SmartInteger.
-     *
-     * @return String object specifying whether first parameter is greater than or equal to the second.
-     */
-        friend std::string operator>=(const SmartInteger &lhs, const SmartInteger &rhs);
-        
-
-    /**
-     * @brief Overloaded operator for == for SmartInteger.
-     *
-     * @return String object specifying whether first parameter is equal to the second.
-     */
-        friend std::string operator==(const SmartInteger &lhs, const SmartInteger &rhs);
-        
-    /**
-     * @brief Overloaded operator for != for SmartInteger.
-     *
-     * @return String object specifying whether first parameter is not equal to the second.
-     */
-        friend std::string operator!=(const SmartInteger &lhs, const SmartInteger &rhs);
-        
+		/**
+		
+		*/
+		friend const SmartInteger& operator+(const SmartInteger& si1,
+			const SmartInteger& si2);
 };
-
 
 
 

@@ -1,6 +1,7 @@
 #include "SmartInteger.hpp"
 
 #include <iostream>
+#include <limits>
 
 int main() {
     std::cout << "Constructing n1 and n2..." << std::endl;
@@ -22,33 +23,15 @@ int main() {
     std::cout << "n3.getValue() should be 3: " << n3.getValue() << std::endl;
 
     // Add more code here!
-  
-    //Test <<
-    std::cout << n1 << n2 << n3;
-
-    //Test <
-    std::cout << std::endl;
-    std::string isLessThan = n2 < n1;
-    std::cout << isLessThan << std::endl;
-
-    //Test <=
-    std::string islessorequal = n2 <= n1;
-    std::cout << islessorequal << std::endl;
-
-    //Test >=
-    std::string isgreaterorequal = n2 >= n1;
-    std::cout << isgreaterorequal << std::endl;
-
-    //Test ==
-    std::string isequal = n2 == n1;
-    std::cout << isequal << std::endl;
-
-
-    //Test !=
-    std::string isnotequal = n2 != n1;
-    std::cout << isnotequal << std::endl;
-
+	std::cout << "n1 + n2 should be 6 : " << n1 + n2 << std::endl;
+	
+	int maxInt = stud::numeric_limits<int>::max();
+	SmartInteger nMax(maxInt);
+	
+	try {
+		std::cout << "Max size int + 1 should throw error: " << nMax + 1 << std::endl;
+	} catch (std::exception& e) {
+		std::cout<<e.what() <<std::endl;
+	}
     return 0;
-
-
 }
