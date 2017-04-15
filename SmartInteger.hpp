@@ -46,16 +46,18 @@ class SmartInteger{
      *
      * @return The num of the smartInteger.
      */
-        const int &getValue();
+        const int getValue();
 
 
-          /**
+      /**
      * @brief Overloaded operator for << for ostream and SmartInteger.
      *
      * @return Ostream object.
      */
-        friend std::ostream& operator<<(std::ostream& os, const SmartInteger::SmartInteger& si);
+        friend std::ostream& operator<<(std::ostream &os, const SmartInteger &si);
 
 };
+
+
 
 #endif //A5_SMARTINTEGER_HPP
