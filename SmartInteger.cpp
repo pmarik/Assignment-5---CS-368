@@ -34,12 +34,13 @@
      *
      * @return The num of the smartInteger.
      */
-    const int &SmartInteger::getValue(){
+    const int SmartInteger::getValue(){
         return num;
     }
 
 
-    std::ostream& operator<<(std::ostream& os, const SmartInteger::SmartInteger& si){
+    std::ostream &operator<<(std::ostream &os, const SmartInteger &si){
 
-        return os << si.getValue();
+        os << si.num;
+        return os;
     }
