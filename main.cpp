@@ -23,6 +23,32 @@ int main() {
 
     // Add more code here!
   
+    //Test <<
+    std::cout << n1 << n2 << n3;
+
+    //Test <
+    std::cout << std::endl;
+    std::string isLessThan = n2 < n1;
+    std::cout << isLessThan << std::endl;
+
+    //Test <=
+    std::string islessorequal = n2 <= n1;
+    std::cout << islessorequal << std::endl;
+
+    //Test >=
+    std::string isgreaterorequal = n2 >= n1;
+    std::cout << isgreaterorequal << std::endl;
+
+    //Test ==
+    std::string isequal = n2 == n1;
+    std::cout << isequal << std::endl;
+
+
+    //Test !=
+    std::string isnotequal = n2 != n1;
+    std::cout << isnotequal << std::endl;
 
     return 0;
+
+
 }
