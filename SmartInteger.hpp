@@ -63,7 +63,7 @@ class SmartInteger{
      * @return String object specifying whether first parameter is less than the second.
      */
       
-        friend std::string operator<(const SmartInteger &lhs, const SmartInteger &rhs);
+        friend bool operator<(const SmartInteger &lhs, const SmartInteger &rhs);
 
 
     /**
@@ -71,21 +71,21 @@ class SmartInteger{
      *
      * @return String object specifying whether first parameter is greater than the second.
      */
-        friend std::string operator>(const SmartInteger &lhs, const SmartInteger &rhs);
+        friend bool operator>(const SmartInteger &lhs, const SmartInteger &rhs);
 
         /**
      * @brief Overloaded operator for <= for SmartInteger.
      *
      * @return String object specifying whether first parameter is less than or equal to the second.
      */
-        friend std::string operator<=(const SmartInteger &lhs, const SmartInteger &rhs);
+        friend bool operator<=(const SmartInteger &lhs, const SmartInteger &rhs);
 
      /**
      * @brief Overloaded operator for >= for SmartInteger.
      *
      * @return String object specifying whether first parameter is greater than or equal to the second.
      */
-        friend std::string operator>=(const SmartInteger &lhs, const SmartInteger &rhs);
+        friend bool operator>=(const SmartInteger &lhs, const SmartInteger &rhs);
         
 
     /**
@@ -93,14 +93,14 @@ class SmartInteger{
      *
      * @return String object specifying whether first parameter is equal to the second.
      */
-        friend std::string operator==(const SmartInteger &lhs, const SmartInteger &rhs);
+        friend bool operator==(const SmartInteger &lhs, const SmartInteger &rhs);
         
     /**
      * @brief Overloaded operator for != for SmartInteger.
      *
      * @return String object specifying whether first parameter is not equal to the second.
      */
-        friend std::string operator!=(const SmartInteger &lhs, const SmartInteger &rhs);
+        friend bool operator!=(const SmartInteger &lhs, const SmartInteger &rhs);
         
 };
 
