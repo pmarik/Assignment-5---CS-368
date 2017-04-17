@@ -56,15 +56,13 @@
      *
      * @return String object specifying whether first parameter is less than the second.
      */
-    std::string operator<(const SmartInteger &lhs, const SmartInteger &rhs){
+    bool operator<(const SmartInteger &lhs, const SmartInteger &rhs){
 
         int lhsNum, rhsNum;
         lhsNum = lhs.num;
         rhsNum = rhs.num;
 
-        std::string lessThan = ((lhsNum < rhsNum) ? ("true") : ("flase"));
-
-        return lessThan;
+        return ((lhsNum < rhsNum) ? (true) : (false));
     }
 
     /**
@@ -72,15 +70,13 @@
      *
      * @return String object specifying whether first parameter is greater than the second.
      */
-    std::string operator>(const SmartInteger &lhs, const SmartInteger &rhs){
+    bool operator>(const SmartInteger &lhs, const SmartInteger &rhs){
 
         int lhsNum, rhsNum;
         lhsNum = lhs.num;
         rhsNum = rhs.num;
 
-        std::string greaterThan = ((lhsNum < rhsNum) ? ("true") : ("flase"));
-
-        return greaterThan;
+        return ((lhsNum < rhsNum) ? (true) : (false));
     }
 
 
@@ -89,16 +85,13 @@
      *
      * @return String object specifying whether first parameter is less than or equal to the second.
      */
-    std::string operator<=(const SmartInteger &lhs, const SmartInteger &rhs){
+    bool operator<=(const SmartInteger &lhs, const SmartInteger &rhs){
 
         int lhsNum, rhsNum;
         lhsNum = lhs.num;
         rhsNum = rhs.num;
 
-         std::string lessThanOrEqual = ((lhsNum <= rhsNum) ? ("true") : ("flase"));
-
-        return lessThanOrEqual;
-
+        return ((lhsNum <= rhsNum) ? (true) : (false));
     }
 
     /**
@@ -106,15 +99,13 @@
      *
      * @return String object specifying whether first parameter is greater than or equal to the second.
      */
-    std::string operator>=(const SmartInteger &lhs, const SmartInteger &rhs){
+    bool operator>=(const SmartInteger &lhs, const SmartInteger &rhs){
 
         int lhsNum, rhsNum;
         lhsNum = lhs.num;
         rhsNum = rhs.num;
 
-         std::string greaterThanOrEqual = ((lhsNum >= rhsNum) ? ("true") : ("flase"));
-
-        return greaterThanOrEqual;
+        return ((lhsNum >= rhsNum) ? (true) : (false));
     }
 
     /**
@@ -122,14 +113,12 @@
      *
      * @return String object specifying whether first parameter is equal to the second.
      */
-     std::string operator==(const SmartInteger &lhs, const SmartInteger &rhs){
+     bool operator==(const SmartInteger &lhs, const SmartInteger &rhs){
         int lhsNum, rhsNum;
         lhsNum = lhs.num;
         rhsNum = rhs.num;
 
-         std::string isEqual = ((lhsNum = rhsNum) ? ("true") : ("flase"));
-
-        return isEqual;
+        return ((lhsNum = rhsNum) ? (true) : (false));
      }
     
 
@@ -138,12 +127,10 @@
      *
      * @return String object specifying whether first parameter is not equal to the second.
      */
-    std::string operator!=(const SmartInteger &lhs, const SmartInteger &rhs){
+    bool operator!=(const SmartInteger &lhs, const SmartInteger &rhs){
         int lhsNum, rhsNum;
         lhsNum = lhs.num;
         rhsNum = rhs.num;
 
-         std::string isnotEqual = ((lhsNum != rhsNum) ? ("true") : ("flase"));
-
-        return isnotEqual;
+        return ((lhsNum != rhsNum) ? (true) : (false));
     }
