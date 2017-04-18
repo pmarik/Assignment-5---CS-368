@@ -112,7 +112,7 @@ const int minInt = std::numeric_limits<int>::min();
         lhsNum = lhs.num;
         rhsNum = rhs.num;
 
-        return ((lhsNum = rhsNum) ? (true) : (false));
+        return ((lhsNum == rhsNum) ? (true) : (false));
      }
     
 
